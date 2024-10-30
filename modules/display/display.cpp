@@ -56,8 +56,8 @@
 
 #define DISPLAY_PIN_A_PCF8574 3
 
-#define I2C1_SDA PB_9
-#define I2C1_SCL PB_8
+#define I2C1_SDA PB_7
+#define I2C1_SCL PB_6
 
 #define PCF8574_I2C_BUS_8BIT_WRITE_ADDRESS 78
 
@@ -78,10 +78,10 @@ typedef struct{
 
 //=====[Declaration and initialization of public global objects]===============
 
-DigitalOut displayD0( D0 );
-DigitalOut displayD1( D1 );
+DigitalOut displayD0( D10 );
+DigitalOut displayD1( D11 );
 DigitalOut displayD2( D2 );
-DigitalOut displayD3( D3 );
+DigitalOut displayD3( D12 );
 DigitalOut displayD4( D4 );
 DigitalOut displayD5( D5 );
 DigitalOut displayD6( D6 );
