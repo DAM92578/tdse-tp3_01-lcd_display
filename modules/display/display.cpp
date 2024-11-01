@@ -93,15 +93,15 @@ typedef struct{
 #define D8_GPIO_Port    GPIOA
 #define D9_Pin          GPIO_PIN_7
 #define D9_GPIO_Port    GPIOC
-#define A0_Pin          GPIO_PIN_0
-#define A0_GPIO_Port    GPIOA
+#define D10_Pin          GPIO_PIN_6
+#define D10_GPIO_Port    GPIOB
 #define D11_Pin         GPIO_PIN_7
 #define D11_GPIO_Port   GPIOA
 #define D12_Pin         GPIO_PIN_6
 #define D12_GPIO_Port   GPIOA
 
 
-DigitalOut displayD0( A0 );
+DigitalOut displayD0( D10 );
 DigitalOut displayD1( D11);
 DigitalOut displayD2( D2 );
 DigitalOut displayD3( D12 );
@@ -277,7 +277,7 @@ static void displayPinWrite( uint8_t pinName, int value )
         case DISPLAY_CONNECTION_GPIO_8BITS:
             switch( pinName ) {
                 case DISPLAY_PIN_D0: //displayD0 = value;       
-                    HAL_GPIO_WritePin((GPIO_TypeDef *)A0_GPIO_Port, (uint16_t)A0_Pin, (GPIO_PinState)value);
+                    HAL_GPIO_WritePin((GPIO_TypeDef *)D10_GPIO_Port, (uint16_t)D10_Pin, (GPIO_PinState)value);
                     break;    
                 case DISPLAY_PIN_D1: //displayD1 = value;   
                     HAL_GPIO_WritePin((GPIO_TypeDef *)D11_GPIO_Port, (uint16_t)D11_Pin, (GPIO_PinState)value);

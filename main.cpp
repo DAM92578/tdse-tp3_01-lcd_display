@@ -10,7 +10,7 @@
 int main()
 {
 
-    displayInit( DISPLAY_CONNECTION_I2C_PCF8574_IO_EXPANDER );
+     displayInit(DISPLAY_CONNECTION_GPIO_8BITS);
     displayCharPositionWrite ( 0,0);
     displayStringWrite("Taller de Sist. ");
     displayCharPositionWrite ( 3,1);
