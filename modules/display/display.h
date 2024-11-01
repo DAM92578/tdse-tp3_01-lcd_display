@@ -7,6 +7,7 @@
 
 //=====[Declaration of public data types]======================================
 
+#include <cstdint>
 typedef enum {
      DISPLAY_CONNECTION_GPIO_4BITS,
      DISPLAY_CONNECTION_GPIO_8BITS,
